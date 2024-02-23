@@ -8,7 +8,7 @@ public class Veiculo {
     public int quantidadeRodas;
 
     public void ligar() {
-
+        System.out.println("O veículo ligou!!!");
     }
 
     public void desligar() {
