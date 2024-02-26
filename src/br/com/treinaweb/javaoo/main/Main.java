@@ -7,13 +7,17 @@ public class Main {
         Veiculo corsa = new Veiculo();
         corsa.setMarca("GM");
         corsa.setNome("Corsa");
-        corsa.ligar();
+        corsa.abastecer(10);
         System.out.println(corsa.getNome());
+        System.out.println(corsa.getQuantidadeCombustivel());
+        corsa.ligar();
 
         Veiculo celta = new Veiculo();
         celta.setMarca("GM");
         celta.setNome("Celta");
-        celta.ligar();
+        celta.abastecer(15);
         System.out.println(celta.getNome());
+        System.out.println(celta.getQuantidadeCombustivel());
+        celta.ligar();
     }
 }
