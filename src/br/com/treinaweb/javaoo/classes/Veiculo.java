@@ -1,5 +1,7 @@
 package br.com.treinaweb.javaoo.classes;
 
+import br.com.treinaweb.javaoo.excecoes.ChassiInvalidoException;
+
 public class Veiculo {
 
     private String nome;
@@ -32,7 +34,7 @@ public class Veiculo {
         if(chassi.length() == 5) {
             this.chassi = chassi;
         } else {
-            throw new Exception("O chassi informado é inválido!");
+            throw new ChassiInvalidoException("O chassi informado é inválido!");
         }
     }
 
