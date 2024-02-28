@@ -1,14 +1,15 @@
 package br.com.treinaweb.javaoo.main;
 
+import br.com.treinaweb.javaoo.classes.Carro;
 import br.com.treinaweb.javaoo.classes.Veiculo;
 
 public class Main {
     public static void main(String[] args) {
         try {
-            Veiculo corsa = new Veiculo();
+            Carro corsa = new Carro();
             corsa.setMarca("GM");
             corsa.setNome("Corsa");
-            corsa.setChassi("ABCD");
+            corsa.setChassi("ABCDE");
             corsa.abastecer(10);
             System.out.println(corsa.getNome());
             System.out.println(corsa.getQuantidadeCombustivel());
