@@ -1,6 +1,7 @@
 package br.com.treinaweb.javaoo.main;
 
 import br.com.treinaweb.javaoo.classes.Carro;
+import br.com.treinaweb.javaoo.classes.Moto;
 import br.com.treinaweb.javaoo.classes.Veiculo;
 
 public class Main {
@@ -20,6 +21,10 @@ public class Main {
 
             Carro celta = new Carro();
             celta.ligar();
+
+            Moto fazer = new Moto();
+            fazer.setMarca("Yamaha");
+            fazer.setNome("Fazer");
         } catch (Exception e) {
             System.out.println("Ocorreu um erro: " + e.getMessage());
         }
