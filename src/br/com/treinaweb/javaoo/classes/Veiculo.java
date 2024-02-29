@@ -2,7 +2,7 @@ package br.com.treinaweb.javaoo.classes;
 
 import br.com.treinaweb.javaoo.excecoes.*;
 
-public class Veiculo {
+public abstract class Veiculo {
 
     private String nome;
     private String marca;

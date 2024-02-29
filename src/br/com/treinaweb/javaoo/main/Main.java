@@ -9,10 +9,10 @@ import br.com.treinaweb.javaoo.excecoes.ChassiInvalidoException;
 public class Main {
     public static void main(String[] args) {
         try {
-            Veiculo corsa = new Moto("Corsa", "GM");
+            Veiculo corsa = new Carro("Corsa", "GM");
             corsa.setChassi("ABCDE");
             corsa.abastecer(10);
-            //((Carro) corsa).setQuantidadePortas(4);
+            // corsa.setQuantidadePortas(4);
             System.out.println("Nome: " + corsa.getNome());
             System.out.println("Quantidade de combustível: " + corsa.getQuantidadeCombustivel());
             System.out.println("Quantidade de rodas: " + corsa.getQuantidadeRodas());
