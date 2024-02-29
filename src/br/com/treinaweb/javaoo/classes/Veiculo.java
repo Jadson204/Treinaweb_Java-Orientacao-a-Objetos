@@ -99,4 +99,8 @@ public abstract class Veiculo {
         }
     }
 
+    // É obrigatório implmentar um método abstrato nas classes filhas
+    // Métodos abstratos só podem ser criados em classes abstratas
+    public abstract void preparar();
+
 }

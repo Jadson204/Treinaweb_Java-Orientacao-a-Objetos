@@ -18,6 +18,7 @@ public class Main {
             System.out.println("Quantidade de rodas: " + corsa.getQuantidadeRodas());
             System.out.println(String.format("O veículo %s está ligado? %s", corsa.getNome(), corsa.isLigado() ? "Sim" : "Não"));
             corsa.abastecer(10);
+            corsa.preparar();
             corsa.ligar();
             corsa.acelerar();
             System.out.println(String.format("Velocidade atual do veículo: %f", corsa.getVelocidade()));

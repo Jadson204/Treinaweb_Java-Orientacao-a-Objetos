@@ -34,4 +34,9 @@ public final class Moto extends Veiculo{
         }
     }
 
+    @Override
+    public void preparar() {
+        System.out.println("Colocar o capacete!!!");
+    }
+
 }
