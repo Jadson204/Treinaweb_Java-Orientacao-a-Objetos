@@ -3,7 +3,8 @@ package br.com.treinaweb.javaoo.classes;
 import br.com.treinaweb.javaoo.excecoes.AceleracaoVeiculoLigadoException;
 import br.com.treinaweb.javaoo.excecoes.FrenagemVeiculoDesligadoException;
 
-public class Moto extends Veiculo{
+// Neste caso, o "final" indica que a classe "Moto" não pode ser herdada por outra classe
+public final class Moto extends Veiculo{
 
     public Moto() {
         this.quantidadeRodas = 2;
