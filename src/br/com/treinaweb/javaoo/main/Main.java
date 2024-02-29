@@ -9,23 +9,20 @@ import br.com.treinaweb.javaoo.excecoes.ChassiInvalidoException;
 public class Main {
     public static void main(String[] args) {
         try {
-//            Carro corsa = new Carro();
-//            corsa.setMarca("GM");
-//            corsa.setNome("Corsa");
-            Veiculo corsa = new Carro("Corsa", "GM");
+            Veiculo corsa = new Moto("Corsa", "GM");
             corsa.setChassi("ABCDE");
             corsa.abastecer(10);
-            ((Carro) corsa).setQuantidadePortas(4);
-            System.out.println(corsa.getNome());
-            System.out.println(corsa.getQuantidadeCombustivel());
-            System.out.println(corsa.getQuantidadeRodas());
+            //((Carro) corsa).setQuantidadePortas(4);
+            System.out.println("Nome: " + corsa.getNome());
+            System.out.println("Quantidade de combustível: " + corsa.getQuantidadeCombustivel());
+            System.out.println("Quantidade de rodas: " + corsa.getQuantidadeRodas());
             System.out.println(String.format("O veículo %s está ligado? %s", corsa.getNome(), corsa.isLigado() ? "Sim" : "Não"));
             corsa.abastecer(10);
             corsa.ligar();
-
-//            Moto fazer = new Moto();
-//            fazer.setMarca("Yamaha");
-//            fazer.setNome("Fazer");
+            corsa.acelerar();
+            System.out.println(String.format("Velocidade atual do veículo: %f", corsa.getVelocidade()));
+            corsa.frear();
+            System.out.println(String.format("Velocidade atual do veículo: %f", corsa.getVelocidade()));
         } catch (AbastecimentoVeiculoLigadoException e) {
             System.out.println("Você não pode abastecer um veículo enquanto ele estiver ligado");
         } catch (ChassiInvalidoException e) {
