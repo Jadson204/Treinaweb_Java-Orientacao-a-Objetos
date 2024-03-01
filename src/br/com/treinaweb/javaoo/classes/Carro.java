@@ -1,6 +1,6 @@
 package br.com.treinaweb.javaoo.classes;
 
-public class Carro extends Veiculo{
+public class Carro extends VeiculoBase{
 
     private int quantidadePortas;
 

@@ -4,7 +4,7 @@ import br.com.treinaweb.javaoo.excecoes.AceleracaoVeiculoLigadoException;
 import br.com.treinaweb.javaoo.excecoes.FrenagemVeiculoDesligadoException;
 
 // Neste caso, o "final" indica que a classe "Moto" não pode ser herdada por outra classe
-public final class Moto extends Veiculo{
+public final class Moto extends VeiculoBase{
 
     public Moto() {
         this.quantidadeRodas = 2;
@@ -19,7 +19,7 @@ public final class Moto extends Veiculo{
     @Override
     public void acelerar() throws AceleracaoVeiculoLigadoException {
         if(this.isLigado()) {
-            this.velocidade += 3;
+            this.velocidade += 15;
         } else {
             throw new AceleracaoVeiculoLigadoException();
         }
@@ -28,7 +28,7 @@ public final class Moto extends Veiculo{
     @Override
     public void frear() throws FrenagemVeiculoDesligadoException {
         if(this.isLigado()) {
-            this.velocidade -= 3;
+            this.velocidade -= 15;
         } else {
             throw new FrenagemVeiculoDesligadoException();
         }

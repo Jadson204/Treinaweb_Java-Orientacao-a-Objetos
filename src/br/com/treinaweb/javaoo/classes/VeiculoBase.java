@@ -1,9 +1,11 @@
 package br.com.treinaweb.javaoo.classes;
 
 import br.com.treinaweb.javaoo.excecoes.*;
-import br.com.treinaweb.javaoo.interfaces.VeiculoInterface;
+import br.com.treinaweb.javaoo.interfaces.Andador;
+import br.com.treinaweb.javaoo.interfaces.Ligador;
+import br.com.treinaweb.javaoo.interfaces.Veiculo;
 
-public abstract class Veiculo implements VeiculoInterface {
+public abstract class VeiculoBase implements Veiculo, Ligador, Andador {
 
     private String nome;
     private String marca;
@@ -13,7 +15,7 @@ public abstract class Veiculo implements VeiculoInterface {
     private Boolean ligado;
     protected float velocidade;
 
-    public Veiculo() {
+    public VeiculoBase() {
         this.ligado = false;
         this.velocidade = 0;
     }

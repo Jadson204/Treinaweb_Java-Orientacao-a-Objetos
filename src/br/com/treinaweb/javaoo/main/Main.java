@@ -2,14 +2,14 @@ package br.com.treinaweb.javaoo.main;
 
 import br.com.treinaweb.javaoo.classes.Carro;
 import br.com.treinaweb.javaoo.classes.Moto;
-import br.com.treinaweb.javaoo.classes.Veiculo;
+import br.com.treinaweb.javaoo.classes.VeiculoBase;
 import br.com.treinaweb.javaoo.excecoes.AbastecimentoVeiculoLigadoException;
 import br.com.treinaweb.javaoo.excecoes.ChassiInvalidoException;
 
 public class Main {
     public static void main(String[] args) {
         try {
-            Veiculo corsa = new Carro("Corsa", "GM");
+             VeiculoBase corsa = new Carro("Corsa", "GM");
             corsa.setChassi("ABCDE");
             corsa.abastecer(10);
             // corsa.setQuantidadePortas(4);
