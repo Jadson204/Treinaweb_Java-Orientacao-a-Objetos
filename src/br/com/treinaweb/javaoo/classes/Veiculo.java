@@ -1,8 +1,9 @@
 package br.com.treinaweb.javaoo.classes;
 
 import br.com.treinaweb.javaoo.excecoes.*;
+import br.com.treinaweb.javaoo.interfaces.VeiculoInterface;
 
-public abstract class Veiculo {
+public abstract class Veiculo implements VeiculoInterface {
 
     private String nome;
     private String marca;
